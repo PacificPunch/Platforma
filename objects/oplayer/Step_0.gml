@@ -35,3 +35,41 @@ if (place_meeting(x,y+vspd,oGround)){
 }
 y += vspd //двигаем по вертикали
 
+
+
+// ----- Анимации ------
+if (D - A !=0)  //поворот персонажа
+image_xscale = move
+
+switch (state) {
+	case PLAYER_STATES.IDLE:
+	sprite_index = sPlayerIdle;
+	break;
+	
+	case PLAYER_STATES.RUN:
+	sprite_index = sPlayerRun;
+	break;
+
+	case PLAYER_STATES.JUMPUP:
+	sprite_index = sPlayerJumpUP;
+	break;
+	case PLAYER_STATES.JUMPDOWN:
+	sprite_index = sPlayerJumpDown;
+	break;
+	
+}
+
+
+if (x != xprevious or y!= yprevious) {
+	state = PLAYER_STATES.RUN
+		if (y > yprevious)
+		state = PLAYER_STATES.JUMPDOWN
+		if (y < yprevious)
+		state = PLAYER_STATES.JUMPUP
+} else
+		state = PLAYER_STATES.IDLE
+	
+	
+	
+
+

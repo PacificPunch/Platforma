@@ -1,12 +1,15 @@
 {
   "spriteId": {
-    "name": "sPlayeridle",
-    "path": "sprites/sPlayeridle/sPlayeridle.yy",
+    "name": "sPlayerIdle",
+    "path": "sprites/sPlayerIdle/sPlayerIdle.yy",
   },
   "solid": false,
   "visible": true,
   "managed": true,
-  "spriteMaskId": null,
+  "spriteMaskId": {
+    "name": "sPlayerIdle",
+    "path": "sprites/sPlayerIdle/sPlayerIdle.yy",
+  },
   "persistent": false,
   "parentObjectId": null,
   "physicsObject": false,
